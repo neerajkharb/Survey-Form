@@ -1,0 +1,62 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>Survey Form</title>
+</head>
+<body>
+  
+  <div class="form-container">
+    <div class="heading">
+      <h1 id="title">Software Developer Survey Form</h1>
+      <p id="description">Thank you for taking the time to help aspiring developers</p>
+  </div>
+    <form id="survey-form">
+      <div class="personal-details">
+        <label class="label1" id="name-label" for= <"name">Full Name <input type="text" id="name" class="input1" placeholder="Enter your name" required/></label>
+        <label class="label1" id="email-label" for="email">E-mail <input type="email" id="email" class="input1" placeholder="Enter your email" required/></label>
+        <label class="label1" id="number-label" for="number">Age <input type="number" id="number" class="input1" placeholder="14" required min="14" max="110" /></label>
+      </div>
+      
+        <div class="education"> 
+          <p>How did you become Software Developer?</p>
+            <label class="radio-label"><input type="radio" name="qualification" value="cs-degree"  class="input2" checked/>Computer Science Degree</label>
+            <label class="radio-label"><input type="radio" name="qualification" value="bootcamp"  class="input2" />Bootcamp</label>
+            <label class="radio-label"><input type="radio" name="qualification" value="selftaught"  class="input2" />Self-taught</label>
+        </div>
+        <div class="experience">
+          <p>How many years of working experience do you have?
+          <select id="dropdown" name="list" size="1">
+            <option value="">select one</option>
+            <option value="1">Less than one year</option>
+            <option value="2">1-2 years</option>
+            <option value="3">2-5 years</option>
+            <option value="4">5-7 years</option>
+            <option value="5">more than 7 years</option>
+            </select>
+        </div>
+        <div class="language">
+          <p>What's the best programming language to learn first?</p>
+          <label for="python" class="checkbox-label" ><input type="checkbox" id="python" name="py-thon" value="lang1" class="input3" >Python</label>
+          <label for="java" class="checkbox-label"><input type="checkbox" id="java" name="ja-va" value="lang2" class="input3">Java</label>
+          <label for="javascript" class="checkbox-label"><input type="checkbox" id="javascript" name="java-script" value="lang3" class="input3" >JavaScript</label>
+          <label for="html_css" class="checkbox-label"><input type="checkbox" id="html_css" name="html-css" value="lang4" class="input3" >HTML&CSS</label>
+          <label for="c" class="checkbox-label"><input type="checkbox" id="c" name="c1" value="lang5" class="input3" >C</label>
+          <label for="cplus" class="checkbox-label"><input type="checkbox" id="cplus" name="c-plus" value="lang6" class="input3" >C++</label>
+          <label for="csharp" class="checkbox-label"><input type="checkbox" id="csharp" name="c-sharp" value="lang7" class="input3" >C#</label>
+          <label for="ruby" class="checkbox-label"><input type="checkbox" id="ruby" name="ru-by" value="lang8" class="input3" >Ruby</label>
+          <label for="php" class="checkbox-label"><input type="checkbox" id="php" name="ph-p" value="lang9" class="input3" >PHP</label>
+          <label for="sql" class="checkbox-label"><input type="checkbox" id="sql" name="sq-l" value="lang10" class="input3" >SQL</label>
+          <label for="swift" class="checkbox-label"><input type="checkbox" id="swift" name="swi-ft" value="lang11" class="input3">Swift</label>
+        </div>
+        <div class="advice">
+          <p>What advice would you offer to an aspiring Software Developer?</p>
+          <textarea id="suggestion" placeholder="Write your advice.."></textarea>
+        </div>
+       
+      <div class="submit">
+        <input type="submit" value="Submit" id="submit"/>
+      </div> 
+    </form>
+  </div>    
+</body>
